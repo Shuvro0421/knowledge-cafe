@@ -9,7 +9,7 @@ const BookMarks = ({bookMarks , readingTime}) => {
             </div>
             
             {
-                bookMarks.map(bookMark => <BookMark key={bookMark.id} bookMark={bookMark}></BookMark>)
+                bookMarks.map((bookMark , idx) => <BookMark key={idx} bookMark={bookMark}></BookMark>)
             }
         </div>
     );
